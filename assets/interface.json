@@ -3,15 +3,6 @@
         {
             "name": "安卓端",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "method": "Search",
-                "class_name": ".*",
-                "window_name": "Visual Studio"
-            }
         }
     ],
     "resource": [
@@ -20,52 +11,33 @@
             "path": [
                 "{PROJECT_DIR}/resource/base"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource/base",
-                "{PROJECT_DIR}/resource/bilibili"
-            ]
         }
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
-        },
-        {
-            "name": "选项任务",
-            "entry": "MyTask2",
+            "name": "签到",
+            "entry": "MihoyoBBS",
             "option": [
-                "任务选项1"
+                "关闭米游社"
             ]
-        },
-        {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "param": {}
         }
     ],
     "option": {
-        "任务选项1": {
+        "关闭米游社": {
             "cases": [
                 {
-                    "name": "文本1",
-                    "param": {
-                        "OcrTask": {
-                            "text": "文本1"
+                    "name": "启用",
+                    "pipeline_override": {
+                        "CloseMihoyoBBS": {
+                            "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "文本2",
-                    "param": {
-                        "OcrTask": {
-                            "text": "文本2"
+                    "name": "禁用",
+                    "pipeline_override": {
+                        "CloseMihoyoBBS": {
+                            "enabled": false
                         }
                     }
                 }

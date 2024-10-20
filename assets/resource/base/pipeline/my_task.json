@@ -1,5 +1,248 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {}
+    "MihoyoBBS": {
+        "next": [
+            "IgnoreUpdates",
+            "IgnoreTeenageMode",
+            "IgnoreEvents",
+            "EnterGenShinPage",
+            "EnterSignInPage",
+            "EnterSignInBenefitsPage0",
+            "Sub_StartMihoyoBBS"
+        ]
+    },
+    "Sub_StartMihoyoBBS": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.mihoyo.hyperion/com.mihoyo.hyperion.main.HyperionMainActivity"
+    },
+    "IgnoreUpdates": {
+        "recognition": "OCR",
+        "expected": [
+            "下次再说"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "IgnoreTeenageMode",
+            "IgnoreEvents",
+            "EnterGenShinPage"
+        ]
+    },
+    "IgnoreTeenageMode": {
+        "recognition": "OCR",
+        "expected": [
+            "我知道了"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "IgnoreEvents",
+            "EnterGenShinPage"
+        ]
+    },
+    "IgnoreEvents": {
+        "recognition": "TemplateMatch",
+        "green_mask": true,
+        "template": "closeEvents.png",
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "EnterGenShinPage"
+        ]
+    },
+    "EnterGenShinPage": {
+        "recognition": "OCR",
+        "expected": [
+            "原神"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "EnterSignInPage"
+        ]
+    },
+    "EnterSignInPage": {
+        "recognition": "OCR",
+        "expected": [
+            "签到福利"
+        ],
+        "roi": [
+            169,
+            282,
+            99,
+            24
+        ],
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "EnterSignInBenefitsPage0",
+            "returnPreviousPage"
+        ]
+    },
+    "EnterSignInBenefitsPage0": {
+        "recognition": "TemplateMatch",
+        "threshold": 0.9,
+        "green_mask": true,
+        "template": "EnterSignInBenefitsPage_0.png",
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "SignInSuccessful"
+        ]
+    },
+    "SignInSuccessful": {
+        "recognition": "OCR",
+        "expected": [
+            "签到成功"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "returnPreviousPage"
+        ]
+    },
+    "closeButton": {
+        "recognition": "TemplateMatch",
+        "green_mask": true,
+        "template": "close.png",
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "returnPreviousPage"
+        ]
+    },
+    "returnPreviousPage": {
+        "key": 4,
+        "action": "Key",
+        "next": [
+            "EnterStarRailPage"
+        ]
+    },
+    "EnterStarRailPage": {
+        "recognition": "OCR",
+        "expected": [
+            "崩坏：星穹铁道"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "EnterArknightsPage1"
+        ]
+    },
+    "EnterArknightsPage1": {
+        "recognition": "OCR",
+        "expected": [
+            "签到福利",
+            "签到蕉"
+        ],
+        "roi": [
+            169,
+            282,
+            99,
+            24
+        ],
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "EnterSignInBenefitsPage1",
+            "SwipeUp"
+        ]
+    },
+    "EnterSignInBenefitsPage1": {
+        "recognition": "TemplateMatch",
+        "threshold": 0.76,
+        "green_mask": true,
+        "template": "EnterSignInBenefitsPage_1.png",
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "SignInSuccessful1"
+        ]
+    },
+    "SwipeUp": {
+        "action": "Swipe",
+        "begin": [
+            100,
+            500,
+            10,
+            10
+        ],
+        "end": [
+            100,
+            100,
+            10,
+            10
+        ],
+        "next": [
+            "EnterSignInBenefitsPage1",
+            "CloseMihoyoBBS",
+            "Stop"
+        ]
+    },
+    "SignInSuccessful1": {
+        "recognition": "OCR",
+        "expected": [
+            "签到成功"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "CloseMihoyoBBS",
+            "Stop"
+        ]
+    },
+    "CloseMihoyoBBS": {
+        "enabled": false,
+        "action": "StopApp",
+        "package": "com.mihoyo.hyperion"
+    },
+    "Stop": {}
 }
