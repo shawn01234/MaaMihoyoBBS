@@ -23,7 +23,7 @@ MMB 是指 MaaMihoyoBBS
 
 ## How to use
 
-> 1. [下载](https://github.com/MaaXYZ/MaaAssistantSkland/releases) 对应平台的压缩包
+> 1. [下载](https://github.com/shawn01234/MaaMihoyoBBS/releases) 对应平台的压缩包
 > 2. 将压缩包解压到没有中文的目录下
 
 ### 基本说明
@@ -97,14 +97,14 @@ MMB 是指 MaaMihoyoBBS
 
 ## How to build
 
-**如果你要编译源码才看这节，否则直接 [下载](https://github.com/MaaXYZ/MaaAssistantSkland/releases) 即可**
+**如果你要编译源码才看这节，否则直接 [下载](https://github.com/shawn01234/MaaMihoyoBBS/releases) 即可**
 
 _欢迎大佬们来带带~_
 
 0. 完整克隆本项目及子项目
 
     ```bash
-    git clone --recursive https://github.com/MaaXYZ/MaaAssistantSkland.git
+    git clone --recursive https://github.com/shawn01234/MaaMihoyoBBS.git
     ```
 
 1. 下载 MaaFramework 的 [Release 包](https://github.com/MaaXYZ/MaaFramework/releases)，解压到 `deps` 文件夹中
