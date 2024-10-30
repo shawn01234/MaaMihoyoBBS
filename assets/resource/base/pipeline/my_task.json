@@ -93,7 +93,7 @@
             24
         ],
         "action": "Click",
-        "post_delay": 10000,
+        "post_delay": 6000,
         "next": [
             "EnterSignInBenefitsPage0",
             "returnPreviousPage"
@@ -106,9 +106,9 @@
         "template": "EnterSignInBenefitsPage_0.png",
         "roi": [
             0,
-            0,
-            0,
-            0
+            367,
+            720,
+            527
         ],
         "action": "Click",
         "next": [
@@ -181,7 +181,7 @@
             0
         ],
         "action": "Click",
-        "post_delay": 10000,
+        "post_delay": 6000,
         "next": [
             "EnterSignInBenefitsPage1",
             "SwipeUp"
@@ -194,9 +194,9 @@
         "template": "EnterSignInBenefitsPage_1.png",
         "roi": [
             0,
-            0,
-            0,
-            0
+            561,
+            720,
+            473
         ],
         "action": "Click",
         "next": [
