@@ -15,10 +15,17 @@
     ],
     "task": [
         {
-            "name": "签到",
+            "name": "米游社签到",
             "entry": "MihoyoBBS",
             "option": [
                 "关闭米游社"
+            ]
+        },
+        {
+            "name": "库街区签到",
+            "entry": "KJQ",
+            "option": [
+                "关闭库街区"
             ]
         }
     ],
@@ -37,6 +44,26 @@
                     "name": "禁用",
                     "pipeline_override": {
                         "CloseMihoyoBBS": {
+                            "enabled": false
+                        }
+                    }
+                }
+            ]
+        },
+        "关闭库街区": {
+            "cases": [
+                {
+                    "name": "启用",
+                    "pipeline_override": {
+                        "CloseKJQ": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "禁用",
+                    "pipeline_override": {
+                        "CloseKJQ": {
                             "enabled": false
                         }
                     }

@@ -1,0 +1,107 @@
+{
+    "KJQ": {
+        "next": [
+            "IgnoreKJQTeenageMode",
+            "EnterKJQSignInPage",
+            "Sub_StartKJQ"
+        ]
+    },
+    "Sub_StartKJQ": {
+        "post_delay": 10000,
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.kurogame.kjq"
+    },
+    "IgnoreKJQTeenageMode": {
+        "recognition": "OCR",
+        "expected": [
+            "我知道了"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "EnterKJQSignInPage"
+        ]
+    },
+    "EnterKJQSignInPage": {
+        "recognition": "OCR",
+        "expected": [
+            "签到奖励"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "EnterSignInBenefitsPage2",
+            "KJQSwipeUp"
+        ]
+    },
+    "EnterSignInBenefitsPage2": {
+        "recognition": "TemplateMatch",
+        "threshold": 0.7,
+        "green_mask": true,
+        "template": "Receive.png",
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "SignInSuccessful2"
+        ]
+    },
+    "KJQSwipeUp": {
+        "action": "Swipe",
+        "begin": [
+            100,
+            600,
+            10,
+            10
+        ],
+        "end": [
+            100,
+            100,
+            10,
+            10
+        ],
+        "next": [
+            "EnterSignInBenefitsPage2",
+            "CloseKJQ",
+            "StopKJQ"
+        ]
+    },
+    "SignInSuccessful2": {
+        "recognition": "OCR",
+        "expected": [
+            "签到成功"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "CloseKJQ",
+            "StopKJQ"
+        ]
+    },
+    "CloseKJQ": {
+        "enabled": false,
+        "action": "StopApp",
+        "package": "com.kurogame.kjq"
+    },
+    "StopKJQ": {}
+}
