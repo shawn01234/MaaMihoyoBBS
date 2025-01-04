@@ -11,6 +11,7 @@
         ]
     },
     "Sub_StartMihoyoBBS": {
+        "post_delay": 10000,
         "is_sub": true,
         "action": "StartApp",
         "package": "com.mihoyo.hyperion/com.mihoyo.hyperion.main.HyperionMainActivity"
@@ -108,7 +109,7 @@
             0,
             467,
             720,
-            427
+            500
         ],
         "action": "Click",
         "next": [
