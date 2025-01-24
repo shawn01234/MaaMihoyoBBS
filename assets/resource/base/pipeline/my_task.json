@@ -194,9 +194,9 @@
         "template": "EnterSignInBenefitsPage_1.png",
         "roi": [
             0,
-            561,
+            400,
             720,
-            473
+            650
         ],
         "action": "Click",
         "next": [

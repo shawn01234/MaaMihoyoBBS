@@ -2,6 +2,8 @@
     "KJQ": {
         "next": [
             "IgnoreKJQTeenageMode",
+            "IgnoreKJQUpdates",
+            "IgnoreKJQEvents",
             "EnterKJQSignInPage",
             "Sub_StartKJQ"
         ]
@@ -17,6 +19,40 @@
         "expected": [
             "我知道了"
         ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "IgnoreKJQUpdates",
+            "IgnoreKJQEvents",
+            "EnterKJQSignInPage"
+        ]
+    },
+    "IgnoreKJQUpdates": {
+        "recognition": "OCR",
+        "expected": [
+            "暂不更新"
+        ],
+        "roi": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "IgnoreKJQEvents",
+            "EnterKJQSignInPage"
+        ]
+    },
+    "IgnoreKJQEvents": {
+        "recognition": "TemplateMatch",
+        "green_mask": true,
+        "template": "closeKJQEvents.png",
         "roi": [
             0,
             0,
