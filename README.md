@@ -9,7 +9,7 @@
 
 MMB 是指 MaaMihoyoBBS
 
-基于MAA全新架构的 米游社 小助手
+基于MAA全新架构的 米游社+库街区 小助手
 
 图像技术 + 模拟控制，解放双手！
 
@@ -28,15 +28,15 @@ MMB 是指 MaaMihoyoBBS
 
 ### 基本说明
 
-1. 请根据 [模拟器支持情况](https://maa.plus/docs/1.3-模拟器支持.html)，进行对应的操作。
+1. 请根据 [模拟器支持情况](https://maa.plus/docs/zh-cn/manual/device/)，进行对应的操作。
 2. 按照 [适配情况](#适配情况) 修改模拟器分辨率，一般在模拟器`设置`-`显示`中进行修改。
 
 ### 直接使用 
 
 > 以 Windows 用户为主，其他系统请照葫芦画瓢。
 
-1. 使用前，前往[米游社官网](https://www.miyoushe.com/)下载米游社APP
-2. 在模拟器上安装并登录米游社APP
+1. 使用前，前往[米游社官网](https://www.miyoushe.com/)下载米游社APP，前往[库街区官网](https://www.kurobbs.com/main.html)下载库街区APP
+2. 在模拟器上安装并登录米游社APP，库街区APP
 3. 首次使用，打开模拟器，双击打开 `MaaPiCli.exe` 或 通过 CMD 执行 `MaaPiCli.exe`
 4. 选择ADB（本教程以 `Auto detect` 为例）
 4. 等待扫描设备（设备越多等待时间越长）
