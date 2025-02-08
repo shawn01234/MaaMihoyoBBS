@@ -52,7 +52,11 @@
     "IgnoreKJQEvents": {
         "recognition": "TemplateMatch",
         "green_mask": true,
-        "template": "closeKJQEvents.png",
+        "threshold": 0.76,
+        "template": [
+            "closeKJQEvents_0.png",
+            "closeKJQEvents_1.png"
+        ],
         "roi": [
             0,
             0,
@@ -85,7 +89,6 @@
     "EnterSignInBenefitsPage2": {
         "recognition": "TemplateMatch",
         "threshold": 0.7,
-        "green_mask": true,
         "template": "Receive.png",
         "roi": [
             0,
