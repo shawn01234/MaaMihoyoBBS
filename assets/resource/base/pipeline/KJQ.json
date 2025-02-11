@@ -52,7 +52,7 @@
     "IgnoreKJQEvents": {
         "recognition": "TemplateMatch",
         "green_mask": true,
-        "threshold": 0.76,
+        "threshold": 0.9,
         "template": [
             "closeKJQEvents_0.png",
             "closeKJQEvents_1.png"
