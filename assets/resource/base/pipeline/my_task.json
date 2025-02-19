@@ -189,9 +189,7 @@
     },
     "EnterSignInBenefitsPage1": {
         "recognition": "TemplateMatch",
-        "threshold": 0.76,
-        "green_mask": true,
-        "template": "EnterSignInBenefitsPage_1.png",
+        "template": "EnterSignInBenefitsPage_2.png",
         "roi": [
             0,
             400,
