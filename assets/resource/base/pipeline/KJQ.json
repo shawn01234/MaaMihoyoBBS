@@ -1,8 +1,8 @@
 {
     "KJQ": {
         "next": [
-            "IgnoreKJQTeenageMode",
             "IgnoreKJQUpdates",
+            "IgnoreKJQTeenageMode",
             "IgnoreKJQEvents",
             "EnterKJQSignInPage",
             "Sub_StartKJQ"
@@ -14,10 +14,10 @@
         "action": "StartApp",
         "package": "com.kurogame.kjq"
     },
-    "IgnoreKJQTeenageMode": {
+    "IgnoreKJQUpdates": {
         "recognition": "OCR",
         "expected": [
-            "我知道了"
+            "暂不更新"
         ],
         "roi": [
             0,
@@ -27,15 +27,15 @@
         ],
         "action": "Click",
         "next": [
-            "IgnoreKJQUpdates",
+            "IgnoreKJQTeenageMode",
             "IgnoreKJQEvents",
             "EnterKJQSignInPage"
         ]
     },
-    "IgnoreKJQUpdates": {
+    "IgnoreKJQTeenageMode": {
         "recognition": "OCR",
         "expected": [
-            "暂不更新"
+            "我知道了"
         ],
         "roi": [
             0,
