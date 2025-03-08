@@ -87,14 +87,15 @@
         ]
     },
     "EnterSignInBenefitsPage2": {
-        "recognition": "TemplateMatch",
-        "threshold": 0.7,
-        "template": "Receive.png",
+        "recognition": "OCR",
+        "expected": [
+            "领"
+        ],
         "roi": [
-            0,
-            0,
-            0,
-            0
+            37,
+            820,
+            646,
+            462
         ],
         "action": "Click",
         "next": [
@@ -105,7 +106,7 @@
         "action": "Swipe",
         "begin": [
             100,
-            600,
+            350,
             10,
             10
         ],
