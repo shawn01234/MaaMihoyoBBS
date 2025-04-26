@@ -123,5 +123,8 @@ _欢迎大佬们来带带~_
 
 ## Join us
 
+注：使用有问题请直接提Issues，暂不提供此助手的群聊
+
+以下为MAA相关的群聊提供
 用户交流 QQ 群：[MAA 使用 & 粥游交流 QQ 群](https://ota.maa.plus/MaaAssistantArknights/api/qqgroup/index.html)<br>
 技术（舟无关）：[内卷地狱！(QQ 群)](https://jq.qq.com/?_wv=1027&k=ypbzXcA2)<br>
